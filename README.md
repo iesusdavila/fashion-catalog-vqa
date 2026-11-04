@@ -24,7 +24,7 @@ A vision-language model (**Qwen2-VL-2B + LoRA**) fine-tuned to look at a fashion
 
 ## Demo
 
-Everything below comes from [`fashion-vlm-inference.ipynb`](fashion-vlm-inference.ipynb), run on one T4 with ~4.2 GB of VRAM.
+Everything below comes from [`fashion_vlm_inference.ipynb`](fashion_vlm_inference.ipynb), run on one T4 with ~4.2 GB of VRAM.
 
 ### 1. Product sheet from one image
 
