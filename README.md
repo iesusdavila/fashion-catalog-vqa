@@ -18,7 +18,7 @@ A vision-language model (**Qwen2-VL-2B + LoRA**) fine-tuned to look at a fashion
 ![LoRA](https://img.shields.io/badge/fine--tuning-LoRA-orange)
 ![GPU](https://img.shields.io/badge/runs%20on-1×%20T4-76B900?logo=nvidia&logoColor=white)
 
-> How the model was trained and evaluated → [`training/README.md`](training/README.md)
+> How the model was trained and evaluated → [`training_README.md`](training_README.md)
 
 ---
 
