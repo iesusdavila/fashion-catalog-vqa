@@ -64,7 +64,7 @@ Each image becomes **one multi-turn conversation** with up to 10 Q/A turns, so t
 | Peak memory | 9.1 GB per GPU |
 | Adapter size | ~74 MB |
 
-<p align="center"><img src="../assets/training_curves.png" width="900"></p>
+<p align="center"><img src="assets/training_curves.png" width="900"></p>
 
 Validation loss reaches its minimum (0.0481) at epoch 6 and then climbs. That checkpoint is the released adapter.
 
@@ -95,14 +95,14 @@ Zero-shot and fine-tuned use **the same weights, prompt and greedy decoding**. F
 
 The share of answers that are a valid catalog value goes from 69.3% to **99.9%**.
 
-<p align="center"><img src="../assets/accuracy_by_qtype.png" width="620"></p>
+<p align="center"><img src="assets/accuracy_by_qtype.png" width="620"></p>
 
 - **Taxonomy alignment explains most of the gain on open questions.** Zero-shot answers `"T-shirt"` or `"Men's Clothing"` where the catalog uses `tshirts` / `topwear`.
 - **Visual recognition improves too.** Yes/no color goes from 88.0% to 95.0%, mostly by fixing the base model's bias toward "yes": correct "no" answers rise from 81.7% to 96.7%.
 - **Remaining color errors are between neighboring shades** that are ambiguous in the labels themselves: `silver → white/grey`, `tan → brown`, `maroon → red`, `navy blue → blue`.
 - **Season is a merchandising label** that is often not visible in the image.
 
-<p align="center"><img src="../assets/yellow_probe.png" width="900"><br><sub>"Is this item yellow?" / "What color is this product?" — zero-shot (base) vs fine-tuned (ft).</sub></p>
+<p align="center"><img src="assets/yellow_probe.png" width="900"><br><sub>"Is this item yellow?" / "What color is this product?" — zero-shot (base) vs fine-tuned (ft).</sub></p>
 
 ## Limitations
 
